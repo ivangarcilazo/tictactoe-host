@@ -1,0 +1,15 @@
+.turn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5vw;
+    width: 2.5vw;
+    border-radius: 1vw;
+    color: black;
+    opacity: 0;
+    font-weight: bolder;
+  }
+  .on{
+    opacity: 1;
+    background-color: aqua;
+  }

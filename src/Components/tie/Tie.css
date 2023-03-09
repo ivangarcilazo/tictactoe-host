@@ -1,0 +1,75 @@
+.containerTie{
+    width: 25vw;
+    height: 100vh;
+    background-color: rgb(91, 90, 90);
+
+    box-shadow: -13px 4px 45px 4px rgba(0,0,0,0.38);
+-webkit-box-shadow: -13px 4px 45px 4px rgba(0,0,0,0.38);
+-moz-box-shadow: -13px 4px 45px 4px rgba(0,0,0,0.38);
+
+    transform: translate(120%);
+    animation-name: inTie;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    }
+
+@keyframes inTie {
+    from{
+        transform: translate(220%);
+    }to{
+        transform: translate(120%);
+    }
+}
+
+.infoGameText{
+    margin-top: 0px;
+    font-size: 4vw;
+    color: rgba(255, 255, 255, 0.826);
+    text-align: center;
+    text-decoration: underline aqua;
+}
+
+.textForEnd{
+    color: rgba(255, 255, 255, 0.826);
+    font-weight: bold;
+
+}
+
+.playAgain{
+    margin-top: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.containerRetryButton{
+    width: 2.5vw;
+    height: 2.5vw;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    transition: all 0.3s;
+
+}
+.containerRetryButton:hover{
+    background-color: rgba(0, 255, 255, 0.379);
+}
+.containerRetryButton:hover .imgRetry{
+    transform: rotate(180deg);
+}
+
+.imgRetry{
+    width: 1vw;
+    transition: all 0.3s;
+}

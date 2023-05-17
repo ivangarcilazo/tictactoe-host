@@ -1,11 +1,11 @@
 .containerTie{
-    width: 25vw;
+    width: 30%;
     height: 100vh;
     background-color: rgb(91, 90, 90);
-
+    position: fixed;
     box-shadow: -13px 4px 45px 4px rgba(0,0,0,0.38);
--webkit-box-shadow: -13px 4px 45px 4px rgba(0,0,0,0.38);
--moz-box-shadow: -13px 4px 45px 4px rgba(0,0,0,0.38);
+    -webkit-box-shadow: -13px 4px 45px 4px rgba(0,0,0,0.38);
+    -moz-box-shadow: -13px 4px 45px 4px rgba(0,0,0,0.38);
 
     transform: translate(120%);
     animation-name: inTie;
@@ -17,6 +17,7 @@
     justify-content: center;
     align-items: center;
 
+    left: 34vw;
     }
 
 @keyframes inTie {
@@ -72,4 +73,27 @@
 .imgRetry{
     width: 1vw;
     transition: all 0.3s;
+}
+
+@media (max-width:560px) {
+    .containerTie{
+        width: 100%;
+        left: -120%;
+        position: fixed;
+        gap: 2rem;
+    }
+    .containerRetryButton{
+        width: 20vw;
+        height: 20vw;
+        border-radius: 10vw;
+    }
+    .imgRetry{
+        width: 10vw;
+    }
+    .infoGameText{
+        font-size: 3rem;
+    }
+    .textForEnd{
+        font-size: 2rem;
+    }
 }

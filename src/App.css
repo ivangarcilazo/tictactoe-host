@@ -39,6 +39,8 @@ h1{
   width: 5vw;
   background-color: aqua;
   cursor: pointer;
+  font-weight: bold;
+  color:rgb(24, 24, 24);
 }
 .containerTurnInfo{
   margin-top: 2vw;
@@ -50,4 +52,22 @@ h1{
   label{
     font-weight: bold;
     color: white;
+  }
+
+
+  @media (max-width:560px) {
+    .square{
+      width: 20vw;
+      height: 20vw;
+    }
+    .containerTurnInfo{
+      margin-top: 2vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.3rem;
+    }
+      label{
+        font-size: 1.4rem;
+      }
   }

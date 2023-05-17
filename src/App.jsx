@@ -73,7 +73,6 @@ function App() {
                   onClick={()=>{clickHandler(index)}}
                    >
                     {turn}
-                    
                   </div>
                 )
               })
